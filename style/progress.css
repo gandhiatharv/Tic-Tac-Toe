@@ -1,0 +1,26 @@
+body {
+    background: #fdc162;
+    justify-content: center;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+  h1 {
+    width: 73vw;
+    text-align: center;
+    font-size: 8vw;
+  }
+
+  .button {
+    position: absolute;
+    bottom: 3vh;
+    background: #353535 !important;
+    padding: 1.5vh;
+    width: auto;
+    text-align: center;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 4vw;
+    cursor: pointer;
+    user-select: none;
+  }
+}

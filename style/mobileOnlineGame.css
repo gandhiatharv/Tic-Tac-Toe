@@ -1,0 +1,260 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Muli', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fdc162;
+}
+
+.inputWrapper {
+    height: 20vh;
+    width: 70vw;
+    position: relative;
+    top: -10vh;
+    background: #fff;
+    padding: 0 6vw;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+    width: 90%;
+    padding: 1.5vh;
+    margin: 3vh 1.5vw 0 1.5vw;
+    text-align: center;
+    background: #1b3647;
+    border-radius: 5px;
+    font-size: 4vw;
+    user-select: none;
+    transition: opacity 200ms ease-in-out;
+}
+
+.button img {
+    width: 4vw;
+    margin: 0 1.5vw 0 0;
+}
+
+#signupScreen .button span {
+    display: flex;
+    justify-content: center;
+}
+
+#signupScreen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#signupScreen h1 {
+    width: 80%;
+    position: relative;
+    top: -15vh;
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    margin: 0 1vw 2vh 1vw;
+    color: #1b3647;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    font-size: 4vw;
+    text-align: center;
+    outline: none;
+    transition: border-color 250ms ease-in-out;
+}
+
+input:focus {
+    border-color: #1b3647;
+}
+
+.errorInput {
+    border-color: red;
+}
+
+.errorInput:focus {
+    border-color: red;
+}
+
+#playersToChallengeWrapper {
+    width: 70vw;
+    text-align: center;
+}
+
+#playersToChallengeWrapper p {
+    margin: 5vh 0 0 0;
+    font-size: 5vw;
+}
+
+#playersToChallenge {
+    width: 100%;
+    margin: 5vh 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: opacity 200ms ease-in-out;
+}
+
+#playersToChallenge .player {
+    background: #353535;
+    padding: 4vw 4.5vw;
+    border-radius: 3px;
+    text-align: center;
+    user-select: none;
+}
+
+#playersToChallenge p {
+    margin: 0;
+    font-size: 5vw;
+    user-select: none;
+}
+
+#resultText {
+    text-align: center;
+}
+
+#requestWindow {
+    position: absolute;
+    width: 90vw;
+    height: 50vh;
+    top: 25vh;
+    left: 5vw;
+    background: #fff;
+    color: black;
+    border-radius: 7px;
+    font-size: 4.5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: scale(.6);
+    z-index: 101;
+    transition: 250ms opacity ease-in-out, 250ms transform ease-in-out;
+}
+
+#requestText {
+    font-size: 5vw;
+    margin-top: .25vh;
+}
+
+#buttonWrapper {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 1.5vh;
+    right: 0;
+}
+
+.requestButton {
+    width: 80%;
+    color: white;
+    padding: 1.5vh 1.5vw;
+    border-radius: 5px;
+    margin: 1.75vh 0;
+    font-size: 4.5vw;
+    text-align: center;
+    user-select: none;
+}
+
+#acceptRequest, #cancelQuitGame {
+    background: #1abc89;
+}
+
+#declineRequest, #quitGame {
+    background: #c02942;
+}
+
+#quitHeadliner {
+    width: 80%;
+    padding: 0 10%;
+    text-align: center;
+}
+
+#quitWindow p {
+    font-size: 4.5vw;
+    width: 80%;
+    padding: 0 10%;
+    text-align: center;
+}
+
+#quitWindow {
+    position: absolute;
+    width: 86vw;
+    height: 50vh;
+    top: 25vh;
+    left: 7vw;
+    background: #fff;
+    color: black;
+    border-radius: 7px;
+    font-size: 4vw;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: scale(.6);
+    z-index: 101;
+    transition: 250ms opacity ease-in-out, 250ms transform ease-in-out;
+}
+
+#playAgainBtn, #quitGameRequest {
+    font-size: 4.5vw;
+}
+
+#signOutBtn {
+    width: 70%;
+}
+
+#signOutBtn img {
+    transform: rotateZ(180deg);
+}
+
+.disableWindow {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000055;
+    z-index: 99;
+    transition: 250ms opacity ease-in-out;
+}
+
+#feedbackText {
+    position: absolute;
+    bottom: 2vh;
+    max-width: 80%;
+    padding: 2vh 4vw;
+    text-align: center;
+    font-size: 4.25vw;
+    border-radius: 5px;
+    opacity: 0;
+    transform: scale(1.2);
+    user-select: none;
+    z-index: 199;
+    transition: 100ms opacity ease-in-out, 100ms transform ease-in-out;
+}
+
+#usernameField {
+    position: absolute;
+    top: 0;
+    right: 3vw;
+    display: none;
+}

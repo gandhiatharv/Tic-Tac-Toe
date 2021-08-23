@@ -1,0 +1,54 @@
+.cell {
+    width: 10vw;
+    height: 10vw;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#cell1 {
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+}
+
+#cell2 {
+    border-bottom-width: 5px;
+}
+
+#cell3 {
+    border-left-width: 5px;
+    border-bottom-width: 5px;
+}
+
+#cell4 {
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+}
+
+#cell5 {
+    border-bottom-width: 5px;
+}
+
+#cell6 {
+    border-left-width: 5px;
+    border-bottom-width: 5px;
+}
+
+#cell7 {
+    border-right-width: 5px;
+}
+
+#cell9 {
+    border-left-width: 5px;
+}

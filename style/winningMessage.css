@@ -1,0 +1,37 @@
+#gameWindow, #buttonBar, #resultBar, #winningScreen {
+    transition: opacity 250ms ease-in-out;
+}
+
+.fadeOut {
+    opacity: 0 !important;
+}
+
+.fadeIn {
+    opacity: 1 !important;
+}
+
+#winningScreen {
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#symbolWrapper {
+    width: 50vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#winningText {
+    font-size: 2vw;
+    user-select: none;
+}
+
+#symbolWrapper .cross {
+    width: 20% !important;
+}

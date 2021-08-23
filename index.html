@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- General -->
+    <title>TicTacToe</title>
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#91a4cf">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/startScreen.css" media="screen and (min-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="./style/mobileStartScreen.css" media="screen and (max-aspect-ratio: 1/1)">
+</head>
+<body>
+    <div id="startScreen">
+        <header>
+            <h1>TicTacToe</h1>
+        </header>
+
+        <div class="content">
+            <a href="./online/">
+                <div class="gamemode" id="onlineBtn">
+                    <div class="icons">
+                        <img src="./icons/user.svg" alt="cannot display icon">
+                        <img src="./icons/globe.svg" alt="cannot display icon">
+                        <img src="./icons/user.svg" alt="cannot display icon">
+                    </div>
+                    <span>play online</span>
+                </div>
+            </a>
+
+            <a href="./local/">
+                <div class="gamemode" id="localBtn">
+                    <div class="icons">
+                        <img src="./icons/user.svg" alt="cannot display icon">
+                        <img src="./icons/mobile.svg" alt="cannot display icon" id="mobile">
+                        <img src="./icons/user.svg" alt="cannot display icon">
+                    </div>
+                    <span>play local</span>
+                </div>
+            </a>
+
+            <a href="./offline/">
+                <div class="gamemode" id="offlineBtn">
+                    <div class="icons">
+                        <img src="./icons/user.svg" alt="cannot display icon">
+                        <img src="./icons/robot.svg" alt="cannot display icon" id="robot">
+                    </div>
+                    <span>play offline</span>
+                </div>
+            </a>
+        </div>
+
+        <footer>
+            <span>made by <a href="https://dorfingerjonas.github.io/">Jonas Dorfinger</a></span>
+            <br>
+            <span><a href="./about/">about & privacy</a></span>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- General -->
+    <title>TicTacToe online</title>
+    <!-- meta Data -->
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#fdc162">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/grid.css" media="screen and (min-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/mobileGrid.css" media="screen and (max-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/cross.css" media="screen and (min-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/mobileCross.css" media="screen and (max-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/circle.css" media="screen and (min-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/mobileCircle.css" media="screen and (max-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/onlineGame.css" media="screen and (min-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/mobileOnlineGame.css" media="screen and (max-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/winningMessage.css" media="screen and (min-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/mobileWinningMessage.css" media="screen and (max-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/gameScreens.css">
+    <!-- JavaScript Files -->
+    <script src="../script/onlineGame.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+</head>
+<body>
+    <div id="signupScreen">
+        <h1>enter a username to start playing</h1>
+
+        <div class="inputWrapper">
+            <input type="text" placeholder="username" id="usernameInput" maxlength="25">
+            <div class="button" id="signUpBtn">signup</div>
+        </div>
+
+        <div id="playersToChallengeWrapper">
+            <p id="challengeText"> &nbsp; </p>
+
+            <div id="playersToChallenge" class="disable"></div>
+        </div>
+
+        <div class="button" id="signOutBtn">
+            <span><img src="../icons/sign-out.svg" alt="cannot display icon"> sign out</span>
+        </div>
+
+        <div id="requestWindow" class="hide">
+            <h2 id="requestHeadliner">you got a game request!</h2>
+            <p id="requestText"></p>
+
+            <div id="buttonWrapper">
+                <div class="requestButton" id="acceptRequest">
+                    <span>accept</span>
+                </div>
+    
+                <div class="requestButton" id="declineRequest">
+                    <span>decline</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="disableRequestWindow" class="hide disableWindow"></div>
+
+        <p id="feedbackText" class="hide"> &nbsp; </p>
+
+        <p id="usernameField"> &nbsp; </p>
+    </div>
+
+    <div id="gameScreen" class="hide">
+        <div id="gameWindow"></div>
+
+        <div id="buttonBar">
+            <div class="button" id="quitGameRequest">
+                <span>quit game</span>
+            </div>
+
+            <div class="button" id="playAgainBtn">
+                <span>play again</span>
+                <span id="playerAcceptedRematchText">0/2</span>
+            </div>
+        </div>
+
+        <div id="resultBar">
+            <p id="resultText">cross' turn</p>
+        </div>
+
+        <div id="quitWindow" class="hide">
+            <h2 id="quitHeadliner">do you really want to quit the game?</h2>
+            <p>If you leave, the other player has won immediately and the score will be reset.</p>
+
+            <div id="buttonWrapper">
+                <div class="requestButton" id="quitGame">
+                    <span>yes</span>
+                </div>
+    
+                <div class="requestButton" id="cancelQuitGame">
+                    <span>cancel</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="disableWindow" class="hide disableWindow"></div>
+    </div>
+
+    <div id="winningScreen" class="hide">
+        <div id="symbolWrapper"></div>
+        <span id="winningText"> &nbsp; </span>
+    </div>
+</body>
+</html>

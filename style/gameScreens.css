@@ -1,0 +1,19 @@
+#gameWindow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+#buttonBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5vh 0 .5vh 0;
+}
+
+.lowlight {
+    opacity: .3;
+}

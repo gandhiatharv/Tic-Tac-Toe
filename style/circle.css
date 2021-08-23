@@ -1,0 +1,66 @@
+.circle {
+  width: 6vw;
+  height: 6vw;
+  position: relative;
+  transition: 250ms opacity ease-in-out;
+}
+
+.circleWrapper {
+  width: 3vw;
+  height: 8vw;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.circleWrapperRight {
+  right: 0;
+}
+
+.circleWrapperLeft {
+  left: 0;
+}
+
+.wholeCircle {
+  width: 4.9vw;
+  height: 4.9vw;
+  border: .6vw solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.circleRight {
+  border-top: .6vw solid #fff;
+  border-right: .6vw solid #fff;
+  right: 0;
+  animation: circleRight 500ms linear forwards;
+}
+
+.circleLeft {
+  border-bottom: .6vw solid #fff;
+  border-left: .6vw solid #fff;
+  left: 0;
+  animation: circleLeft 500ms linear forwards;
+}
+
+@keyframes circleRight {
+  0% {
+    transform: rotate(-135deg);
+  }
+  50%,
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes circleLeft {
+  0%,
+  50% {
+    transform: rotate(-135deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}

@@ -1,0 +1,30 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Muli', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #7bb7fa;
+}
+
+.button {
+    background: #353535 !important;
+    padding: 1.5vh;
+    width: auto;
+    text-align: center;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    cursor: pointer;
+    user-select: none;
+    transition: box-shadow 200ms ease-in-out;
+}
+
+.button:hover {
+    box-shadow: 0 0 0 0.25rem #35353580;
+}

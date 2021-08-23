@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- General -->
+    <title>TicTacToe offline</title>
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <!-- meta Data -->
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#42b983">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/gameScreens.css">
+    <link rel="stylesheet" href="../style/grid.css" media="screen and (min-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/mobileGrid.css" media="screen and (max-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/cross.css" media="screen and (min-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/mobileCross.css" media="screen and (max-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/circle.css" media="screen and (min-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/mobileCircle.css" media="screen and (max-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/offlineGame.css" media="screen and (min-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/mobileOfflineGame.css" media="screen and (max-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/winningMessage.css" media="screen and (min-aspect-ratio: 1/1)">
+    <link rel="stylesheet" href="../style/mobileWinningMessage.css" media="screen and (max-aspect-ratio: 1/1)">
+    <!-- JavaScript Files -->
+    <script src="../script/offlineGame.js"></script>
+</head>
+<body>
+    <div id="gameWindow"></div>
+
+    <div id="buttonBar">
+        <a href="../">
+            <div class="button">Back</div>
+        </a>
+        <div class="button" id="resetGameBtn">Reset Game</div>
+    </div>
+
+    <div id="resultBar">
+        <p id="resultText">cross' turn</p>
+    </div>
+
+    <div id="winningScreen" class="hide">
+        <div id="symbolWrapper"></div>
+        <span id="winningText"> &nbsp; </span>
+    </div>
+</body>
+</html>
